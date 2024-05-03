@@ -31,4 +31,23 @@ public class Manager {
         System.out.println("Nuevo cliente añadido a la cola:");
         System.out.println(customer);
     }
+
+    public void serveCustomer() {
+
+        Customer nextCustomer = cashier.nextCustomer();
+        System.out.println("Cliente atendido:");
+        System.out.println(nextCustomer);
+    }
+
+    public void checkQueue() {
+
+        System.out.println("Clientes pendientes:");
+        System.out.println(cashier);
+    }
+
+    public void closeCashier() {
+
+        this.cashier.close();
+        System.out.println("Caja cerrada. Gracias por su visita.");
+    }
 }

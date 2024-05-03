@@ -33,6 +33,17 @@ public class Cashier {
 
     public boolean open() {
 
+        if (!isOpen) {
+            return false;
+        }
+        
+        this.isOpen = false;
+        
+        return true;
+    }
+
+    public boolean close() {
+
         if (isOpen) {
             return false;
         }
@@ -47,7 +58,7 @@ public class Cashier {
         customers.add(customer);
     }
 
-    public Customer nexCustomer() {
+    public Customer nextCustomer() {
 
         return this.customers.poll();
     }
