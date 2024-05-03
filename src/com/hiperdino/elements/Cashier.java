@@ -3,18 +3,21 @@ package com.hiperdino.elements;
 import java.util.LinkedList;
 import java.util.Queue;
 
-import com.hiperdino.elements.Customer;
 import com.hiperdino.util.Format;
 
 public class Cashier {
     
+    private static int COUNT = 0;
+
     private int id;
     private Queue<Customer> customers;
+    private boolean isOpen;
 
-    public Cashier(int id) {
+    public Cashier() {
 
-        this.id = id;
+        this.id = ++COUNT;
         this.customers = new LinkedList<>();
+        this.isOpen = false;
     }
 
     private String getCostumers() {
@@ -26,6 +29,17 @@ public class Cashier {
         }
 
         return list.toString();
+    }
+
+    public boolean open() {
+
+        if (isOpen) {
+            return false;
+        }
+        
+        this.isOpen = true;
+        
+        return true;
     }
 
     public void addCustomer(Customer customer) {
