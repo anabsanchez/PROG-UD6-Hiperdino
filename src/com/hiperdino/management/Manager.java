@@ -35,7 +35,7 @@ public class Manager {
         }
 
         cashier.addCustomer(customer);
-        System.out.println("Nuevo cliente añadido a la cola:");
+        System.out.println("\nNuevo cliente añadido a la cola:");
         System.out.println(customer);
     }
 
@@ -46,7 +46,7 @@ public class Manager {
         }
 
         Customer nextCustomer = cashier.nextCustomer();
-        System.out.println("Cliente atendido:");
+        System.out.println("\nCliente atendido:");
         System.out.println(nextCustomer);
     }
 
@@ -56,7 +56,6 @@ public class Manager {
             throw new SupermarketException("No hay clientes en la cola.");
         }
 
-        System.out.println("Clientes pendientes:");
         System.out.println(cashier);
     }
 
@@ -67,6 +66,6 @@ public class Manager {
         }
 
         this.cashier.close();
-        System.out.println("Caja cerrada. Gracias por su visita.");
+        System.out.println("\nCaja cerrada. Gracias por su visita.");
     }
 }

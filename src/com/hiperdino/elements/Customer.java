@@ -25,7 +25,7 @@ public class Customer {
         StringBuilder list = new StringBuilder();
 
         for (Product product : this.products) {
-            list.append("\n\t").append("- ").append(product);
+            list.append("\n").append(" - ").append(product);
         }
 
         return list.toString();
@@ -47,7 +47,7 @@ public class Customer {
         StringBuilder stringBuilder = new StringBuilder();
 
         stringBuilder.append(Format.header(this.name, '_'))
-                     .append("\nCesta de la compra:\n")
+                     .append("\nCesta de la compra:")
                      .append(this.getProducts())
                      .append("\n");
 

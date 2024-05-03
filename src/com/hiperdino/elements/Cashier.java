@@ -25,7 +25,7 @@ public class Cashier {
         StringBuilder list = new StringBuilder();
 
         for (Customer customer : this.customers) {
-            list.append("\n\t").append("- ").append(customer);
+            list.append("\n").append(" - ").append(customer.getName());
         }
 
         return list.toString();

@@ -9,7 +9,7 @@ public class Format {
         int titleLength = title.length();
         int sidesLength = (45 - titleLength) / 2;
 
-        header.append(repeatChar(c, 45)).append("\n")
+        header.append(repeatChar(c, 47)).append("\n")
               .append(repeatChar(c, sidesLength - 1)).append("  ")
               .append(title)
               .append("  ").append(repeatChar(c, sidesLength - 1));
