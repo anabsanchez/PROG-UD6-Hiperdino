@@ -31,29 +31,24 @@ public class Cashier {
         return list.toString();
     }
 
-    public boolean isOpen() {
-
-        return this.isOpen;
-    }
-
     public boolean open() {
 
-        if (!isOpen) {
+        if (this.isOpen) {
             return false;
         }
         
-        this.isOpen = false;
+        this.isOpen = true;
         
         return true;
     }
 
     public boolean close() {
 
-        if (isOpen) {
+        if (!isOpen) {
             return false;
         }
         
-        this.isOpen = true;
+        this.isOpen = false;
         
         return true;
     }
@@ -68,7 +63,7 @@ public class Cashier {
         return this.customers.poll();
     }
 
-    private int customersLeft() {
+    public int customersLeft() {
 
         return this.customers.size();
     }

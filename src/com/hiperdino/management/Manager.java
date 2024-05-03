@@ -16,11 +16,9 @@ public class Manager {
 
     public void openCashier() {
 
-        if (this.cashier.isOpen()) {
+        if (!this.cashier.open()) {
             throw new SupermarketException("La caja ya está abierta.");
         }
-
-        this.cashier.open();
     }
 
     public void addCustomer() {
@@ -51,6 +49,10 @@ public class Manager {
     }
 
     public void closeCashier() {
+
+        if (cashier.customersLeft() != 0) {
+            throw new SupermarketException("No se puede cerrar la caja. Quedan clientes pendientes.");
+        }
 
         this.cashier.close();
         System.out.println("Caja cerrada. Gracias por su visita.");
