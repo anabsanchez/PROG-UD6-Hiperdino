@@ -11,7 +11,7 @@ public class HiperdinoApp {
 
     public static void main(String[] args) {
 
-        System.out.println("\nHIPERDINO - Simulación de Supermercado\n");
+        System.out.println("\nHIPERDINO - Simulación de Supermercado");
 
         while(true) {
 
