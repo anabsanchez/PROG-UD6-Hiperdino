@@ -2,6 +2,7 @@ package com.hiperdino.management;
 
 import com.hiperdino.elements.Cashier;
 import com.hiperdino.elements.Customer;
+import com.hiperdino.exceptions.SupermarketException;
 import com.hiperdino.util.Random;
 
 public class Manager {
@@ -14,6 +15,10 @@ public class Manager {
     }
 
     public void openCashier() {
+
+        if (this.cashier.isOpen()) {
+            throw new SupermarketException("La caja ya está abierta.");
+        }
 
         this.cashier.open();
     }
