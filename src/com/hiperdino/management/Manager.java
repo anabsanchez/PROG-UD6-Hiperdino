@@ -23,6 +23,10 @@ public class Manager {
 
     public void addCustomer() {
 
+        if (!this.cashier.isOpen()) {
+            throw new SupermarketException("La caja está cerrada. No se puede añadir clientes a la cola.");
+        }
+
         Customer customer = Random.nexCustomer();
         int numProducts = (int) (Math.random() * 10) + 1;
 
@@ -37,12 +41,20 @@ public class Manager {
 
     public void serveCustomer() {
 
+        if (cashier.customersLeft() == 0) {
+            throw new SupermarketException("No hay clientes en la cola.");
+        }
+
         Customer nextCustomer = cashier.nextCustomer();
         System.out.println("Cliente atendido:");
         System.out.println(nextCustomer);
     }
 
     public void checkQueue() {
+
+        if (cashier.customersLeft() == 0) {
+            throw new SupermarketException("No hay clientes en la cola.");
+        }
 
         System.out.println("Clientes pendientes:");
         System.out.println(cashier);

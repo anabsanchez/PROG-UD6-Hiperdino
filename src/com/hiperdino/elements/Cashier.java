@@ -31,6 +31,11 @@ public class Cashier {
         return list.toString();
     }
 
+    public boolean isOpen() {
+
+        return this.isOpen;
+    }
+
     public boolean open() {
 
         if (this.isOpen) {
