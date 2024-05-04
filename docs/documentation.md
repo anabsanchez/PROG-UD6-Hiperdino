@@ -1,4 +1,4 @@
-# Documentación
+# Documentación - Supermercado Hiperdino
 
 ### Clases de Utilidad:
 
@@ -99,3 +99,5 @@ Clase principal que ejecuta la simulación del supermercado, proporcionando una 
 - **Método performAction():** Interpreta la opción ingresada por el usuario y realiza la acción correspondiente. Si se ingresa una opción no válida o cualquiera de los métodos que se invocan en su interior lanza alguna excepción, se captura y maneja la excepción del tipo SupermarketException, mostrando un mensaje de error al usuario.
 
 - **Método exitProgram():** Finaliza la ejecución del programa.
+
+[<- Volver>](../README.md)

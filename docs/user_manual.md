@@ -23,3 +23,5 @@ Para salir del programa en cualquier momento, selecciona la opción 'Q' en el me
 También puedes cerrar el programa seleccionando la opción '5' para cerrar el supermercado.
 
 ¡Eso es todo! Disfruta utilizando el Supermercado Hiperdino para simular la gestión de un supermercado.
+
+[<- Volver>](../README.md)
