@@ -100,4 +100,4 @@ Clase principal que ejecuta la simulación del supermercado, proporcionando una 
 
 - **Método exitProgram():** Finaliza la ejecución del programa.
 
-[<- Volver>](../README.md)
+[<- Volver](../README.md)

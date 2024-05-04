@@ -9,14 +9,20 @@ Instrucciones para su uso:
 **- Ejecución del Programa:**
 Ejecuta el programa para iniciar la simulación del supermercado.
 
+![run program](./images/run.png)
+
 **- Menú de Opciones:**
 Una vez que el programa se haya iniciado, verás un menú de opciones en la consola.
 Selecciona una opción del menú utilizando las teclas numéricas o la letra 'Q'.
+
+![menu](./images/menu.png)
 
 **- Operaciones:**
 Selecciona una opción del menú para realizar la operación correspondiente.
 
 > Por ejemplo, puedes abrir la caja para comenzar a atender a los clientes, agregar nuevos clientes a la cola, atender clientes existentes, ver la cola de clientes pendientes y cerrar el supermercado cuando hayas terminado.
+
+![add customer](./images/add.png) ![check customers](./images/check.png)
 
 **- Finalización del Programa:**
 Para salir del programa en cualquier momento, selecciona la opción 'Q' en el menú.
@@ -24,4 +30,4 @@ También puedes cerrar el programa seleccionando la opción '5' para cerrar el s
 
 ¡Eso es todo! Disfruta utilizando el Supermercado Hiperdino para simular la gestión de un supermercado.
 
-[<- Volver>](../README.md)
+[<- Volver](../README.md)
